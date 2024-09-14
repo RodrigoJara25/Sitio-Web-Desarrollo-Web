@@ -19,12 +19,21 @@ footer{
     width: 100%;
     height: 41.25rem;
     background-image: url("../assets/images/dary-entre-caminantes.png");
+    background-size: cover;
 }
 
 .bannerPersonajes{
     width: 100%;
     height: 41.25rem;
     background-image: url("../assets/images/personajes-banner.png");
+    background-size: cover;
+}
+
+.bannerTemporadas{
+    width: 100%;
+    height: 41.25rem;
+    background-image: url("../assets/images/banner-temporadas.png");
+    background-size: cover;
 }
 
 h1{
@@ -42,6 +51,7 @@ h3{
     color: #FFFFFF;
     font-size: 1.75rem;
     font-family: "DeadKansas";
+    /* text-align: center; */
 }
 
 p{
@@ -75,6 +85,35 @@ footer p{
 }
 
 .fotoPerfil{
-    width: 302px;
-    height: 399px;
+    width: 18.875rem;
+    height: 24.9375rem;
 }
+
+.tablaTemporadas{
+    font-size: 1rem;
+}
+
+.twd-dead-city{
+    background-image: url("../assets/images/twd-dead-city.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 74.1875rem 27.6875rem;
+    text-align: center;
+    width: 90rem;
+    height: 27.6875rem;
+}
+
+.twd-the-ones-who-live{
+    background-image: url("../assets/images/twd-the-ones-who-live.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 74.1875rem 27.6875rem;
+    text-align: center;
+    width: 90rem;
+    height: 27.6875rem;
+}
+
+.footer{
+    text-align: center;
+}
+
