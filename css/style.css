@@ -15,10 +15,16 @@ footer{
     background-color: #0D0D0D;
 }
 
-.banner{
+.bannerIndex{
     width: 100%;
     height: 41.25rem;
     background-image: url("../assets/images/dary-entre-caminantes.png");
+}
+
+.bannerPersonajes{
+    width: 100%;
+    height: 41.25rem;
+    background-image: url("../assets/images/personajes-banner.png");
 }
 
 h1{
@@ -59,3 +65,16 @@ footer p{
     font-size: 1rem;
 }
 
+.nombrePersonajes{
+    font-family: "DeadKansas";
+    font-size: 2.25rem;
+}
+
+.frasePersonajes{
+    font-size: 1.25rem;
+}
+
+.fotoPerfil{
+    width: 302px;
+    height: 399px;
+}
