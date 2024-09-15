@@ -36,6 +36,13 @@ footer{
     background-size: cover;
 }
 
+.bannerMapa{
+    width: 100%;
+    height: 41.25rem;
+    background-image: url("../assets/images/hilltop-mapa.png");
+    background-size: cover;
+}
+
 h1{
     font-family: "DeadKansas";
     color: #F7F6E4;
@@ -117,3 +124,50 @@ footer p{
     text-align: center;
 }
 
+.fondoHospital{
+    background-image: url("../assets/images/el-hospital.png");
+    width: 90rem;
+    height: 51.6875rem;
+
+}
+
+.previewUbicaciones{
+    width: 90rem;
+    height: 50.0625rem;
+}
+
+.previewGranja{
+    background-image: url("../assets/images/la-granja.png");
+    background-size: cover;
+    width: 22.5rem;
+    height: 50rem;
+}
+
+.previewPrision{
+    background-image: url("../assets/images/la-prision.png");
+    background-size: cover;
+    width: 22.5rem;
+    height: 50rem;
+}
+
+.previewAlexandria{
+    background-image: url("../assets/images/alexandria.png");
+    background-size: cover;
+    width: 22.5rem;
+    height: 50rem;
+}
+
+.previewSantuario{
+    background-image: url("../assets/images/el-santuario-preview.png");
+    background-size: cover;
+    width: 22.5rem;
+    height: 50rem;
+}
+
+.h2Especial{
+    font-family: "DeadKansas";
+}
+
+.pEspecial{
+    font-size: 1.5rem;
+}
