@@ -79,16 +79,15 @@ footer{
 
 }
 
-.divBanner{
-    /* Box Model */
-    margin-left: 7.125rem;
-}
-
 .bannerPersonajes{
     width: 100%;
     height: 41.25rem;
     background-image: url("../assets/images/personajes-banner.png");
     background-size: cover;
+    
+    /* Flex Box */
+    display: flex;
+    align-items: center;
 }
 
 .bannerTemporadas{
@@ -96,6 +95,10 @@ footer{
     height: 41.25rem;
     background-image: url("../assets/images/banner-temporadas.png");
     background-size: cover;
+
+    /* Flex Box */
+    display: flex;
+    align-items: center;
 }
 
 .bannerMapa{
@@ -103,6 +106,10 @@ footer{
     height: 41.25rem;
     background-image: url("../assets/images/hilltop-mapa.png");
     background-size: cover;
+
+    /* Flex Box */
+    display: flex;
+    align-items: center;
 }
 
 .bannerContacto{
@@ -110,6 +117,15 @@ footer{
     height: 41.25rem;
     background-image: url("../assets/images/banner-contacto.png");
     background-size: cover;
+
+    /* Flex Box */
+    display: flex;
+    align-items: center;
+}
+
+.divBanner{
+    /* Box Model */
+    margin-left: 7.125rem;
 }
 
 h1{
@@ -160,20 +176,6 @@ nav ul li a{
     margin-bottom: 0px;
     padding-bottom: 0px;
     font-size: 1rem;
-}
-
-.nombrePersonajes{
-    font-family: "DeadKansas";
-    font-size: 2.25rem;
-}
-
-.frasePersonajes{
-    font-size: 1.25rem;
-}
-
-.fotoPerfil{
-    width: 18.875rem;
-    height: 24.9375rem;
 }
 
 .tablaTemporadas{
@@ -297,6 +299,8 @@ nav ul li a{
     padding: 1.25rem 1.875rem;
 }
 
+
+/* Página Index */
 .sectionAcercaDe{
     width: 100%;
     height: 805px;
@@ -467,6 +471,88 @@ nav ul li a{
     font-family: "DeadKansas";
     font-size: 1.75rem;
     margin-bottom: 5%;
+}
+
+/* Página Personajes Principales */
+.sectionPersonajesPrincipales{
+    /* Box Model */
+    margin: 3% 0%;
+    /* Flex Box */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px 10%;
+}
+
+.sectionPersonajesPrincipales div{
+    width: 302px;
+    height: 567px;
+}
+
+.sectionPersonajesPrincipales div .nombrePersonajes{
+    font-family: "DeadKansas";
+    font-size: 2.25rem;
+    text-align: center;
+    /* Box Model */
+    /* margin-top: 8px; */
+
+}
+
+.sectionPersonajesPrincipales div .frasePersonajes{
+    font-family: "Inika", serif;
+    font-size: 1.25rem;
+    /* Box Model */
+    margin-top: 0px;
+}
+
+.fotoPerfil{
+    width: 18.875rem;
+    height: 24.9375rem;
+}
+
+.momentos-destacados{
+    width: 100%;
+    height: 514px;
+    background-image: url("../assets/images/section-personajes-twd.png");
+}
+
+.div-momentos-destacados{
+    width: 100%;
+    height: 238px;
+
+    /* Flex */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.div-momentos-destacados h2{
+    /* Box Model */
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.divVideosTrailers{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.divVideosTrailers article{
+    width: 25%;
+}
+
+.divVideosTrailers article p{
+    font-family: "Impact";
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+iframe {
+    border: 2px solid #ebf1f0; 
+    border-radius: 10px; 
 }
 
 /* Fuentes Generales */
