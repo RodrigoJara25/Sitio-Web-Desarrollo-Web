@@ -182,26 +182,6 @@ nav ul li a{
     font-size: 1rem;
 }
 
-.twd-dead-city{
-    background-image: url("../assets/images/twd-dead-city.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 74.1875rem 27.6875rem;
-    text-align: center;
-    width: 90rem;
-    height: 27.6875rem;
-}
-
-.twd-the-ones-who-live{
-    background-image: url("../assets/images/twd-the-ones-who-live.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 74.1875rem 27.6875rem;
-    text-align: center;
-    width: 90rem;
-    height: 27.6875rem;
-}
-
 .divFooter{
     /* Box Model */
     margin-top: 2%;
@@ -218,76 +198,6 @@ nav ul li a{
 
 .divFooter p{
     font-size: 1.5rem;
-}
-
-.fondoHospital{
-    background-image: url("../assets/images/el-hospital.png");
-    width: 90rem;
-    height: 51.6875rem;
-
-}
-
-.previewUbicaciones{
-    width: 90rem;
-    height: 50.0625rem;
-}
-
-.previewGranja{
-    background-image: url("../assets/images/la-granja.png");
-    background-size: cover;
-    width: 22.5rem;
-    height: 50rem;
-}
-
-.previewPrision{
-    background-image: url("../assets/images/la-prision.png");
-    background-size: cover;
-    width: 22.5rem;
-    height: 50rem;
-}
-
-.previewAlexandria{
-    background-image: url("../assets/images/alexandria.png");
-    background-size: cover;
-    width: 22.5rem;
-    height: 50rem;
-}
-
-.previewSantuario{
-    background-image: url("../assets/images/el-santuario-preview.png");
-    background-size: cover;
-    width: 22.5rem;
-    height: 50rem;
-}
-
-.h2Especial{
-    font-family: "DeadKansas";
-}
-
-.pEspecial{
-    font-size: 1.5rem;
-}
-
-.contactoRedesSociales{
-    width: 90rem;
-    height: 47.375rem;
-}
-
-.tituloRedesSociales{
-    font-family: "DeadKansas";
-    font-size: 4rem;
-}
-
-.cajaComentarios{
-    background-color: #F7F6E4;
-    width: 77.5625rem;
-    height: 16.6875rem;
-    margin: 0 auto;
-}
-
-.boxComentarios{
-    width: 90rem;
-    height: 41.0625rem;
 }
 
 .textoComentarios{
@@ -553,6 +463,448 @@ nav ul li a{
 iframe {
     border: 2px solid #ebf1f0; 
     border-radius: 10px; 
+}
+
+.sectionTemporadas{
+    width: 1309px;
+    margin: 0 auto;
+}
+
+.divTemporadasHead{
+    width: 100%;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1.5fr;
+    grid-template-rows: 100px;
+    gap: 30px;
+    grid-template-areas: "temporada episodios resumen fecha";
+
+    /* Box Model */
+    margin-top: 50px;
+}
+
+.divTemporadasHead div{
+    width: 100%;
+    height: 100%;
+    /* Box Model */
+    border: 1px solid #4F5948;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTemporadasHead div p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.head1{
+    grid-area: temporada;
+    justify-self: center;
+}
+.head2{
+    grid-area: episodios;
+    justify-self: center;
+}
+.head3{
+    grid-area: resumen;
+    justify-self: center;
+}
+.head4{
+    grid-area: fecha;
+    justify-self: center;
+}
+
+.divTemporadasContenido{
+    width: 100%;
+    /* Box Model */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.divTemporadasContenido .divTablaTemporadas{
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+.tablaTemporadas1{
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    /* Box Model */
+    border: 1px solid #4F5948;
+    /* Grid */
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablaTemporadas2{
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    /* Box Model */
+    border: 1px solid #4F5948;
+    /* Grid */
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablaTemporadas3{
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    /* Box Model */
+    border: 1px solid #4F5948;
+    padding: 20px;
+    /* Grid */
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablaTemporadas4{
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    /* Box Model */
+    border: 1px solid #4F5948;
+    /* Grid */
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionNuevosLanzamientos{
+    width: 100%;
+    height: 1180px;
+}
+
+.div-nuevos-lanzamientos{
+    width: 100%;
+    height: 238px;
+
+    /* Flex */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.div-nuevos-lanzamientos h2{
+    /* Box Model */
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.twd-dead-city{
+    background-image: url("../assets/images/twd-dead-city.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 74.1875rem 27.6875rem;
+    text-align: center;
+    width: 90rem;
+    height: 27.6875rem;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Box Model */
+    margin: 30px;
+}
+
+.twd-the-ones-who-live{
+    background-image: url("../assets/images/twd-the-ones-who-live.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 74.1875rem 27.6875rem;
+    text-align: center;
+    width: 90rem;
+    height: 27.6875rem;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Box Model */
+    margin: 30px;
+}
+
+/* .divVideosTrailers{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.divVideosTrailers article{
+    width: 25%;
+} */
+
+.fondoHospital{
+    background-image: url("../assets/images/el-hospital.png");
+    width: 100%;
+    height: 827px;
+    /* Position */
+    position: relative;
+}
+
+.fondoHospital div{
+    width: 60%;
+    text-align: justify;
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Position */
+    position: absolute;
+    bottom: 15%;
+    left: 7%;
+}
+
+.previewUbicaciones{
+    width: 100%;
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    /* Box Model */
+    margin: 30px 0px;
+}
+
+.previewGranja{
+    background-image: url("../assets/images/la-granja.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 50rem;
+    /* Flexbox */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* Position */
+    position: relative;
+}
+
+.previewPrision{
+    background-image: url("../assets/images/la-prision.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 50rem;
+    /* Flexbox */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* Position */
+    position: relative;
+}
+
+.previewAlexandria{
+    background-image: url("../assets/images/alexandria.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 50rem;
+    /* Flexbox */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* Position */
+    position: relative;
+}
+
+.previewSantuario{
+    background-image: url("../assets/images/el-santuario-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 50rem;
+    /* Flexbox */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* Position */
+    position: relative;
+}
+
+.h2Especial{
+    width: 50%;
+    font-family: "DeadKansas";
+    font-size: 40px;
+    /* Position */
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+}
+
+.sectionMapa{
+    width: 87%;
+    margin: 0 auto;
+}
+
+.sectionMapa .card-item{
+    width: 100%;
+    /* Box Model */
+    border: 1px solid #D9D9D9;
+    border-radius: 40px;
+    padding: 8%;
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    /* Position */
+    position: relative;
+}
+
+.sectionMapa .card-item .card-img{
+    grid-column: 1/5;
+    grid-row: 1/5;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sectionMapa .card-item .card-texto{
+    text-align: justify;
+
+    grid-column: 5/10;
+    grid-row: 1/5;
+
+    position: absolute;
+    /* bottom: 0; */
+    top: 50%;                        
+    transform: translateY(-50%);
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 60px;
+}
+
+.titulosMapas{
+    font-family: "DeadKansas";
+    font-size: 2.1875rem;
+    width: 23%;
+}
+
+.pEspecial{
+    font-size: 1rem;
+    font-family: "Inika", serif;
+}
+
+.contactoRedesSociales{
+    width: 100%;
+    /* height: 47.375rem; */
+}
+
+.div-redes-sociales{
+    width: 100%;
+    height: 238px;
+
+    /* Flex */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.div-redes-sociales h2{
+    
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.div-redes-sociales-contacto{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div-contenedor-redes-sociales{
+    width: 80%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 3% 10% 5% 10%;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    /* gap: 20%; */
+    gap: 80px;
+
+}
+
+.div-redes-sociales-contacto div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.div-redes-sociales-contacto div p{
+    color: black;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+.boxComentarios{
+    width: 100%;
+    height: 41.0625rem;
+    
+    margin-top: 20px;
+}
+
+.div-comentarios{
+    width: 100%;
+    height: 238px;
+
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.div-comentarios h2{
+    /* Box Model */
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.formulario{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajaComentarios{
+    background-color: #F7F6E4;
+    width: 70%;
+    height: 16.6875rem;
+}
+
+.botonComentarios{
+    margin-top: 20px;
+    padding: 10px 15px;
 }
 
 /* Fuentes Generales */
