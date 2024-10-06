@@ -1098,7 +1098,122 @@ iframe {
     padding: 10px 15px;
 }
 
+@media (max-width: 768px) {
+    .contactoRedesSociales {
+        width: 100%;
+        margin-top: 20px;
+    }
 
+    .div-redes-sociales {
+        width: 100%;
+        height: 14.875rem;
+        /* Flex */ 
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+    }
 
+    .div-redes-sociales h2 {
+        margin-left: 100px; 
+        margin-top: 30px;
+    }
+
+    .divTituloEspecialPrincipal{
+        font-family: "DeadKansas";
+        font-size: 3rem;
+        color: #927E7E;
+        opacity: 0.32;
+    
+        position: absolute;
+        left: 60px;
+    }
+
+    .div-redes-sociales-contacto {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* Cambiar a columna */
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .div-contenedor-redes-sociales {
+        width: 80%;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 3% 10% 5% 10%;
+        display: flex;
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center; 
+        gap: 20px; 
+    }
+
+    .div-redes-sociales-contacto div img {
+        width: 100%;
+        height: auto; /* Cambiar a auto */
+        object-fit: contain;
+    }
+
+    .div-redes-sociales-contacto div p {
+        color: black;
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 1%;
+    }
+}
+
+@media (max-width: 425px){
+    .boxComentarios{
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .div-redes-sociales {
+        width: 100%;
+        height: auto;
+        /* Flex */ 
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+    }
+
+    .div-redes-sociales h2 {
+        margin-left: 100px; 
+        margin-top: 30px;
+        font-size: 1.5625rem;
+    }
+
+    .divTituloEspecialPrincipal{
+        font-family: "DeadKansas";
+        font-size: 2.1875rem;
+        color: #927E7E;
+        opacity: 0.32;
+    
+        position: absolute;
+        left: 60px;
+    }
+
+    .div-contenedor-redes-sociales {
+        margin-top: 10px;
+    }
+
+    .div-comentarios{
+        width: 100%;
+        height: auto;
+        /* Flexbox */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .div-comentarios h2{
+        /* Box Model */
+        margin-left: 100px;
+        margin-top: 30px;
+        font-size: 1.5625rem;
+    }
+}
 
 
