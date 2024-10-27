@@ -481,42 +481,42 @@ p{
 //     }
 //   }
   
-//   @media (max-width: 425px) {
-//     .sectionAcercaDe {
-//         height: auto;
+ @media (max-width: 425px) {
+    .sectionAcercaDe {
+        height: auto;
 
-//         .divTitulo {
-//             grid-column: 1 / -1;
-//             h2 {
-//                 font-size: 1.25rem;
-//             }
-//         }
+        .divTitulo {
+            grid-column: 1 / -1;
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
 
-//         .divImagen {
-//             grid-column: 1 / -1;
-//             width: 100%;
-//         }
-//     }
+        .divImagen {
+            grid-column: 1 / -1;
+            width: 100%;
+        }
+    }
 
-//     .sectionUltimosTrailers .divUltimosTrailers h2 {
-//         margin-left: 10px;
-//         font-size: 1.25rem;
-//     }
+    .sectionUltimosTrailers .divUltimosTrailers h2 {
+        margin-left: 10px;
+        font-size: 1.25rem;
+    }
 
-//     .sectionExploraPersonajes .exploraPersonajes p, .sectionExploraPersonajes .miraMapa p {
-//         font-size: 1.25rem;
-//     }
+    .sectionExploraPersonajes .exploraPersonajes p, .sectionExploraPersonajes .miraMapa p {
+        font-size: 1.25rem;
+    }
 
-//     .sectionExploraPersonajes {
-//         flex-direction: column;
-//         background-image: none;
+    .sectionExploraPersonajes {
+        flex-direction: column;
+        background-image: none;
 
-//         .exploraPersonajes,
-//         .miraMapa {
-//         width: 100%;
-//         }
-//     }
-// }
+        .exploraPersonajes,
+        .miraMapa {
+        width: 100%;
+        }
+    }
+}
 
 /* Pagina Personajes Principales*/
 
