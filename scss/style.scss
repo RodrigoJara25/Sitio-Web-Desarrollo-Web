@@ -1,0 +1,1223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+/* font-family: "Inika", serif; */
+
+/* Variables */
+$bg-color: #0D0D0D;
+$text-color: #F7F6E4;
+$highlight-color: #F10000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "DeadKansas";
+    src: url("../assets/tipografias/Dead\ Kansas.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Impact";
+    src: url("../assets/tipografias/Impact.ttf");
+}
+
+body{
+    background-color: #0D0D0D;
+}
+
+header{
+    background-color: #0D0D0D;
+    height: 120px;
+}
+
+footer{
+    background-color: #0D0D0D;
+    height: 196px;
+}
+
+.navbar{
+    /* Flex Box */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Position */
+    position: relative;
+
+    .logo-twd{
+        margin-left: 61px;
+    }
+
+    ul{
+        font-size: 1rem;
+
+        /* Flex Box */
+        display: flex;
+        gap: 28px;
+        list-style-type: none;
+        
+        /* Position */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        li a{
+            text-decoration: none;
+            color: $text-color;
+        }
+    }
+}
+
+@media (max-width: 845px) {
+    header {
+        height: 200px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+
+        ul {
+            position: static;
+            transform: none;
+            width: 100%;
+            justify-content: center;
+            li {
+                margin: 5px 0;
+            }
+        }
+    }
+    .logo-twd {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Banners */
+@mixin estructura_banner($img){
+    width: 100%;
+    height: 41.25rem;
+    background-image: url($img);
+    background-size: cover;
+    
+    /* Flex Box */
+    display: flex;
+    align-items: center;
+}
+
+.bannerIndex{
+    @include estructura_banner("../assets/images/dary-entre-caminantes.png");
+}
+
+.bannerPersonajes{
+    @include estructura_banner("../assets/images/personajes-banner.png");
+
+}
+
+.bannerTemporadas{
+    @include estructura_banner("../assets/images/banner-temporadas.png");
+}
+
+.bannerMapa{
+    @include estructura_banner("../assets/images/hilltop-mapa.png");
+}
+
+.bannerContacto{
+    @include estructura_banner("../assets/images/banner-contacto.png");
+} 
+
+.divBanner{
+    /* Box Model */
+    margin-left: 7.125rem;
+}
+
+h1{
+    all: unset;   /*quito propiedades del h1 para que se vea mejor la fuente*/
+    display: block;
+    font-family: "DeadKansas";
+    color: $text-color;
+    font-size: 6.25rem;
+    width: 28.625rem;
+}
+
+@media (max-width: 690px){
+    .divBanner{
+        /* Box Model */
+        margin-left: 60px;
+    }
+    h1{
+        all: unset;   /*quito propiedades del h1 para que se vea mejor la fuente*/
+        display: block;
+        font-family: "DeadKansas";
+        color: $text-color;
+        font-size: 2.5rem;
+        width: 28.625rem;
+    }
+}
+
+h2{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-family: "Inika", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+h3{
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-family: "DeadKansas";
+    /* text-align: center; */
+}
+
+p{
+    color: #FFFFFF;
+    font-size: 1.75rem;
+}
+
+.cita{
+    color: $highlight-color;
+}
+
+.copyright{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 1rem;
+}
+
+.tablaTemporadas{
+    font-size: 1rem;
+}
+
+.divFooter{
+    /* Box Model */
+    margin-top: 2%;
+    /* Flex Box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    h3{
+        font-size: 1.75rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.textoComentarios{
+    color: $bg-color;
+}
+
+.boton{
+    background-color: #971215;
+    padding: 1.25rem 1.875rem;
+}
+
+/* Fuentes Generales */
+.divTituloEspecialPrincipal{
+    font-family: "DeadKansas";
+    font-size: 6rem;
+    color: #927E7E;
+    opacity: 0.32;
+    position: absolute;
+    left: 120px;
+}
+
+/* Página Index */
+.sectionAcercaDe{
+    width: 100%;
+    height: 805px;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /* Centrar el Layout */
+    justify-content: center;
+    align-content: center;
+    /* Posicionar items del layout */
+    justify-items: center;
+    align-items: center;
+    .divTitulo{
+        grid-column: 2/7;
+        grid-row: 3/5;
+    
+        /* Position */
+        position: relative;
+    }
+    .divImagen{
+        grid-column: 8/12;
+        grid-row: 2/6;
+        object-fit: contain;
+        width: 471px;
+        height: 653px;
+        .divImagen img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.divTituloEspecial{
+    font-family: "DeadKansas";
+    font-size: 6rem;
+    color: #927E7E;
+    opacity: 0.32;
+    /* Position */
+    position: absolute;
+    top: -50px;
+}
+
+.sectionUltimosTrailers{
+    width: 100%;
+    height: 704px;
+    .divUltimosTrailers{
+        width: 100%;
+        height: 238px;
+    
+        /* Flex */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            /* Box Model */
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+    }
+    .divVideosTrailers{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        article{
+            width: 25%;
+            p{
+                font-family: "Impact";
+                text-align: center;
+            
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+#carouselExample{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+.carouselPosition{
+    width: 100%;
+    position: absolute;
+}
+
+#mataTodo {
+    height: auto !important; /* Esto sobrescribirá cualquier estilo inline */
+}
+
+.parrafoCarousel{
+    font-size: .9375rem;
+}
+
+.sectionExploraPersonajes{
+    width: 100%;
+    height: 660px;
+    background-image: url("../assets/images/paisaje-rick-caballo-ciudad.png");
+    background-repeat: no-repeat;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-evenly;
+    .exploraPersonajes{
+        text-align: center;
+        width: 50%;
+        position: relative;
+        p{
+            font-family: "DeadKansas";
+            font-size: 1.75rem;
+            margin-top: 10%;
+        }
+        .personajeImg1{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .personajeImg2{
+            position: absolute;
+            top: 55%;
+            left: 20%;
+        }
+        .personajeImg3{
+            position: absolute;
+            top: 55%;
+            right: 20%;
+        }
+    }  
+    .miraMapa{
+        width: 50%;
+        text-align: center;
+        /* Flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: "DeadKansas";
+            font-size: 1.75rem;
+            margin-bottom: 5%;
+        }
+    }
+}  
+
+/* Media Queries para 1024px, 768px, y 425px */
+
+
+@media (max-width: 1024px) {
+    .divTituloEspecial {
+        font-size: 3.125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionAcercaDe {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Cambiamos el grid a 2 columnas */
+        grid-template-rows: repeat(3, 1fr);
+        margin: 0;
+        padding: 0;
+    }
+
+    .divTitulo{
+        grid-column: 1 / 3;
+        grid-row: 2/3;
+        justify-self: center; /* Centra horizontalmente dentro de su columna */
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .divImagen {
+        width: 400px;
+        grid-column: 3 / 4; /* Ajustamos para ocupar una columna de las dos disponibles */
+        height: auto; /* Ajusta la altura automáticamente */
+        overflow: hidden; /* Oculta el contenido desbordado de la imagen */
+        object-fit: contain;
+    }
+
+
+    .divImagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Mantiene la proporción de la imagen sin salirse del contenedor */
+    }
+    
+    .divTituloEspecial {
+        font-size: 60px; /* Redimensionamos el título para pantallas pequeñas */
+    }
+}
+  
+//     .sectionAcercaDe {
+//       .divTitulo h2 {
+//         font-size: 1.5rem;
+//       }
+  
+//       .divTitulo p {
+//         font-size: 1.25rem;
+//       }
+  
+//       .divImagen {
+//         width: 40%;
+//       }
+//     }
+  
+//     .sectionUltimosTrailers .divUltimosTrailers h2 {
+//       margin-left: 50px;
+//     }
+  
+//     .sectionExploraPersonajes .exploraPersonajes p,
+//     .sectionExploraPersonajes .miraMapa p {
+//       font-size: 1.5rem;
+//     }
+//   }
+  
+//   @media (max-width: 768px) {
+//     .sectionAcercaDe {
+//       grid-template-columns: repeat(6, 1fr);
+//       .divTitulo {
+//         grid-column: 1/7;
+//       }
+  
+//       .divImagen {
+//         grid-column: 1/7;
+//         width: 80%;
+//       }
+//     }
+  
+//     .sectionUltimosTrailers .divUltimosTrailers h2 {
+//       margin-left: 20px;
+//       font-size: 1.5rem;
+//     }
+  
+//     .sectionExploraPersonajes {
+//       flex-direction: column;
+  
+//       .exploraPersonajes {
+//         width: 100%;
+//       }
+  
+//       .miraMapa {
+//         width: 100%;
+//       }
+//     }
+//   }
+  
+//   @media (max-width: 425px) {
+//     .sectionAcercaDe {
+//         height: auto;
+
+//         .divTitulo {
+//             grid-column: 1 / -1;
+//             h2 {
+//                 font-size: 1.25rem;
+//             }
+//         }
+
+//         .divImagen {
+//             grid-column: 1 / -1;
+//             width: 100%;
+//         }
+//     }
+
+//     .sectionUltimosTrailers .divUltimosTrailers h2 {
+//         margin-left: 10px;
+//         font-size: 1.25rem;
+//     }
+
+//     .sectionExploraPersonajes .exploraPersonajes p, .sectionExploraPersonajes .miraMapa p {
+//         font-size: 1.25rem;
+//     }
+
+//     .sectionExploraPersonajes {
+//         flex-direction: column;
+//         background-image: none;
+
+//         .exploraPersonajes,
+//         .miraMapa {
+//         width: 100%;
+//         }
+//     }
+// }
+
+/* Pagina Personajes Principales*/
+
+.sectionPersonajesPrincipales{
+    /* Box Model */
+    margin: 3% 0%;
+    /* Flex Box */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px 10%;
+    div{
+        width: 302px;
+        height: 567px;
+        .nombrePersonajes{
+            font-family: "DeadKansas";
+            font-size: 2.25rem;
+            text-align: center;
+            /* Box Model */
+            /* margin-top: 8px; */
+        }
+        .frasePersonajes{
+            font-family: "Inika", serif;
+            font-size: 1.25rem;
+            /* Box Model */
+            margin-top: 0px;
+        }
+    }
+}
+
+.fotoPerfil{
+    width: 18.875rem;
+    height: 24.9375rem;
+}
+
+.momentos-destacados{
+    width: 100%;
+    height: 514px;
+    background-image: url("../assets/images/section-personajes-twd.png");
+}
+
+.div-momentos-destacados{
+    width: 100%;
+    height: 238px;
+
+    /* Flex */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h2{
+        /* Box Model */
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+}
+
+.divVideosTrailers{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    article{
+        width: 25%;
+        p{
+            font-family: "Impact";
+            text-align: center;
+        
+            margin-top: 10px;
+        }
+    }
+}
+
+iframe {
+    border: 2px solid $text-color; 
+    border-radius: 10px; 
+}
+
+@media (max-width: 960px){
+    .div-momentos-destacados h2{
+        /* Box Model */
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .divTituloEspecialPrincipal{
+        font-family: "DeadKansas";
+        font-size: 3rem;
+        color: #927E7E;
+        opacity: 0.32;
+    
+        position: absolute;
+        left: 60px;
+    }
+}
+
+@media (max-width: 560px) {
+    header{
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px 0; 
+    }
+
+    .logo-twd {
+        margin-left: 0; 
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        transform: none; 
+        width: 100%; 
+        justify-content: center; 
+        align-items: center;
+        li {
+            margin: 5px 0; 
+        }
+    }
+
+    .divBanner {
+        margin-left: 10px; 
+        width: 100%; 
+        h1{
+            font-size: 1.875rem; 
+            width: 50%; 
+        }
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .divFooter{
+        /* Box Model */
+        margin-top: 2%;
+        /* Flex Box */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        h3{
+            font-size: .9375rem;
+        }
+        p{
+            font-size: .625rem;
+        }
+    }
+
+    .copyright{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-size: .5rem;
+    }
+}
+
+@media (max-width: 375px){
+    .momentos-destacados{
+        width: 100%;
+        height: 514px;
+        background-image: url("../assets/images/section-personajes-twd.png");
+    }
+    
+    .div-momentos-destacados{
+        width: 100%;
+        height: 238px;
+    
+        /* Flex */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            /* Box Model */
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+    }
+    
+    .divVideosTrailers{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        article{
+            width: 25%;
+            p{
+                font-family: "Impact";
+                text-align: center;
+            
+                margin-top: 5px;
+            }
+        }
+    }
+    
+    iframe {
+        border: 2px solid #ebf1f0; 
+        border-radius: 10px; 
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .divTituloEspecialPrincipal{
+        font-family: "DeadKansas";
+        font-size: 1.875rem;
+        color: #927E7E;
+        opacity: 0.32;
+    
+        position: absolute;
+        left: 20px;
+    }
+}
+
+/* Pagina Temporadas */
+$background-images: (
+  twd-dead-city: "../assets/images/twd-dead-city.png",
+  twd-the-ones-who-live: "../assets/images/twd-the-ones-who-live.png"
+);
+
+.sectionTemporadas{
+    width: 1309px;
+    margin: 0 auto;
+}
+
+.divTemporadasHead{
+    width: 100%;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1.5fr;
+    grid-template-rows: 100px;
+    gap: 30px;
+    grid-template-areas: "temporada episodios resumen fecha";
+
+    /* Box Model */
+    margin-top: 50px;
+    div{
+        width: 100%;
+        height: 100%;
+        /* Box Model */
+        border: 1px solid #4F5948;
+        /* Flexbox */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+}
+
+.head1{
+    color: $text-color;
+    grid-area: temporada;
+    justify-self: center;
+}
+
+.head2{
+    @extend .head1;
+    grid-area: episodios;
+}
+
+.head3{
+    @extend .head1;
+    grid-area: resumen;
+}
+
+.head4{
+    @extend .head1;
+    grid-area: fecha;
+}
+
+.divTemporadasContenido{
+    width: 100%;
+    /* Box Model */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .divTablaTemporadas{
+        /* Grid */
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1.5fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+}
+
+.tablaTemporadas1{
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    /* Box Model */
+    border: 1px solid #4F5948;
+    /* Grid */
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablaTemporadas2{
+    @extend .tablaTemporadas1;
+    /* Grid */
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.tablaTemporadas3{
+    @extend .tablaTemporadas1;
+    /* Grid */
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.tablaTemporadas4{
+    @extend .tablaTemporadas1;
+    /* Grid */
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.sectionNuevosLanzamientos{
+    width: 100%;
+    height: 1180px;
+    .div-nuevos-lanzamientos{
+        width: 100%;
+        height: 238px;
+    
+        /* Flex */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            /* Box Model */
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+    }
+    .twd-dead-city{
+        
+        background-image: url(map-get($background-images, twd-dead-city));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 74.1875rem 27.6875rem;
+        text-align: center;
+        width: 90rem;
+        height: 27.6875rem;
+        /* Flexbox */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Box Model */
+        margin: 30px;
+    }
+    .twd-the-ones-who-live{
+        @extend .twd-dead-city;
+        background-image: url(map-get($background-images, twd-the-ones-who-live));
+    }
+}
+
+/* Pagina Mapa */
+
+.fondoHospital{
+    background-image: url("../assets/images/el-hospital.png");
+    width: 100%;
+    height: 827px;
+    /* Position */
+    position: relative;
+    div{
+        width: 60%;
+        text-align: justify;
+        /* Flexbox */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Position */
+        position: absolute;
+        bottom: 15%;
+        left: 7%;
+    }
+}
+
+.previewUbicaciones{
+    width: 100%;
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    /* Box Model */
+    margin: 30px 0px;
+}
+
+.previewGranja{
+    background-image: url("../assets/images/la-granja.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 50rem;
+    /* Flexbox */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* Position */
+    position: relative;
+}
+
+.previewPrision{
+    @extend .previewGranja;
+    background-image: url("../assets/images/la-prision.png");
+}
+
+.previewAlexandria{
+    @extend .previewGranja;
+    background-image: url("../assets/images/alexandria.png");
+}
+
+.previewSantuario{
+    @extend .previewGranja;
+    background-image: url("../assets/images/el-santuario-preview.png");
+}
+
+.h2Especial{
+    width: 50%;
+    font-family: "DeadKansas";
+    font-size: 40px;
+    /* Position */
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+}
+
+.sectionMapa{
+    width: 87%;
+    margin: 0 auto;
+    .card-item{
+        width: 100%;
+        /* Box Model */
+        border: 1px solid #D9D9D9;
+        border-radius: 40px;
+        padding: 8%;
+        margin: 3%;
+        /* Grid */
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        align-items: center;
+        /* Position */
+        position: relative;
+        .card-img{
+            grid-column: 1/5;
+            grid-row: 1/5;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .card-texto{
+            text-align: justify;
+        
+            grid-column: 5/10;
+            grid-row: 1/5;
+        
+            position: absolute;
+            /* bottom: 0; */
+            top: 50%;                        
+            transform: translateY(-50%);
+        
+            /* Flexbox */
+            display: flex;
+            flex-direction: column;
+        
+            padding-left: 60px;
+            .titulosMapas{
+                font-family: "DeadKansas";
+                font-size: 2.1875rem;
+                width: 23%;
+            }
+            
+            .pEspecial{
+                font-size: 1rem;
+                font-family: "Inika", serif;
+            }
+        }
+    }
+}
+
+/* Pagina Contacto */
+
+.contactoRedesSociales{
+    width: 100%;
+    /* height: 47.375rem; */
+    .div-redes-sociales{
+        width: 100%;
+        height: 238px;
+    
+        /* Flex */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+    
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+    }
+    .div-redes-sociales-contacto{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .div-contenedor-redes-sociales{
+            width: 80%;
+            background-color: $text-color;
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 3% 10% 5% 10%;
+            /* Flexbox */
+            display: flex;
+            justify-content: center;
+            /* gap: 20%; */
+            gap: 80px;
+            div p{
+                color: black;
+                text-align: center;
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 1%;
+            }
+            div img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        
+    }
+}
+
+.boxComentarios{
+    width: 100%;
+    height: 41.0625rem;
+    margin-top: 20px;
+    .div-comentarios{
+        width: 100%;
+        height: 238px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            /* Box Model */
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+    }
+    .formulario{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .cajaComentarios{
+            background-color: $text-color;
+            width: 70%;
+            height: 16.6875rem;
+        }
+        .botonComentarios{
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: $text-color; 
+            padding: 15px 30px; 
+            border-radius: 3px; 
+            border-color: none;
+            cursor: pointer; /* Cambia el cursor al pasar el mouse */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+        .botonComentarios:hover {
+            background-color: #6B7A6C; 
+            transform: translateY(-2px); 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .contactoRedesSociales {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .div-redes-sociales {
+        width: 100%;
+        height: 14.875rem;
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+
+        h2 {
+            margin-left: 100px; 
+            margin-top: 30px;
+        }
+    }
+
+    .divTituloEspecialPrincipal {
+        font-family: "DeadKansas";
+        font-size: 3rem;
+        color: #927E7E;
+        opacity: 0.32;
+        position: absolute;
+        left: 60px;
+    }
+
+    .div-redes-sociales-contacto {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            img {
+                width: 100%;
+                height: auto; 
+                object-fit: contain;
+            }
+
+            p {
+                color: black;
+                text-align: center;
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 1%;
+            }
+        }
+    }
+
+    .div-contenedor-redes-sociales {
+        width: 80%;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 3% 10% 5% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 426px) {
+    .boxComentarios {
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .div-redes-sociales {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+
+        h2 {
+            margin-left: 100px; 
+            margin-top: 30px;
+            font-size: 1.5625rem;
+        }
+    }
+
+    .divTituloEspecialPrincipal {
+        font-family: "DeadKansas";
+        font-size: 2.1875rem;
+        color: #927E7E;
+        opacity: 0.32;
+        position: absolute;
+        left: 60px;
+    }
+
+    .div-contenedor-redes-sociales {
+        margin-top: 10px;
+    }
+
+    .div-comentarios {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        h2 {
+            margin-left: 100px;
+            margin-top: 30px;
+            font-size: 1.5625rem;
+        }
+    }
+}
