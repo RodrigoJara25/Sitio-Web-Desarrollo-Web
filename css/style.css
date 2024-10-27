@@ -396,9 +396,20 @@ p {
     grid-column: 1/3;
     grid-row: 2/3;
     justify-self: center; /* Centra horizontalmente dentro de su columna */
+    position: absolute;
   }
   .divTitulo p {
     font-size: 20px;
+    position: relative;
+    bottom: 250px;
+  }
+  .divTitulo h2 {
+    position: relative;
+    bottom: 120px;
+  }
+  .divTitulo .divTituloEspecial {
+    top: -250px;
+    font-size: 40px;
   }
   .divImagen {
     width: 400px;
@@ -412,8 +423,53 @@ p {
     height: 100%;
     object-fit: contain; /* Mantiene la proporción de la imagen sin salirse del contenedor */
   }
-  .divTituloEspecial {
-    font-size: 60px; /* Redimensionamos el título para pantallas pequeñas */
+  .personajeImg2 {
+    display: none;
+  }
+  .miraMapa {
+    width: 35%;
+    height: auto;
+  }
+  .miraMapa p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .miraMapa img {
+    object-fit: contain;
+    width: 100%;
+    height: 45%;
+    padding: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .sectionAcercaDe {
+    height: auto;
+  }
+  .sectionAcercaDe .divTitulo {
+    grid-column: 1/-1;
+  }
+  .sectionAcercaDe .divTitulo h2 {
+    font-size: 1.25rem;
+  }
+  .sectionAcercaDe .divImagen {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+  .sectionUltimosTrailers .divUltimosTrailers h2 {
+    margin-left: 10px;
+    font-size: 1.25rem;
+  }
+  .sectionExploraPersonajes .exploraPersonajes p, .sectionExploraPersonajes .miraMapa p {
+    font-size: 1.25rem;
+  }
+  .sectionExploraPersonajes {
+    flex-direction: column;
+    background-image: none;
+  }
+  .sectionExploraPersonajes .exploraPersonajes,
+  .sectionExploraPersonajes .miraMapa {
+    width: 100%;
   }
 }
 /* Pagina Personajes Principales*/
