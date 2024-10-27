@@ -1,0 +1,14 @@
+@media (max-width: 690px){
+    .divBanner{
+        /* Box Model */
+        margin-left: 60px;
+    }
+    h1{
+        all: unset;   /*quito propiedades del h1 para que se vea mejor la fuente*/
+        display: block;
+        font-family: "DeadKansas";
+        color: $text-color;
+        font-size: 2.5rem;
+        width: 28.625rem;
+    }
+}

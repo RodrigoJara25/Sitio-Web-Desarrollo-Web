@@ -1,0 +1,143 @@
+.bannerTemporadas{
+    @include estructura_banner("../assets/images/banner-temporadas.png");
+}
+
+.sectionTemporadas{
+    width: 1309px;
+    margin: 0 auto;
+    .divTemporadasHead{
+        width: 100%;
+    
+        /* Grid */
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1.5fr;
+        grid-template-rows: 100px;
+        gap: 30px;
+        grid-template-areas: "temporada episodios resumen fecha";
+    
+        /* Box Model */
+        margin-top: 50px;
+        div{
+            width: 100%; 
+            height: 100%;
+            /* Box Model */
+            border: 1px solid #4F5948;
+            /* Flexbox */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                text-align: center;
+                font-size: 1rem;
+            }
+            .head1{
+                color: $text-color;
+                grid-area: temporada;
+                justify-self: center;
+            }
+            
+            .head2{
+                @extend .head1;
+                grid-area: episodios;
+            }
+            
+            .head3{
+                @extend .head1;
+                grid-area: resumen;
+            }
+            
+            .head4{
+                @extend .head1;
+                grid-area: fecha;
+            }
+        }
+    }
+    .divTemporadasContenido{
+        width: 100%;
+        /* Box Model */
+        margin-top: 20px;
+        margin-bottom: 40px;
+        /* Flexbox */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .divTablaTemporadas{
+            /* Grid */
+            display: grid;
+            grid-template-columns: 1fr 1fr 3fr 1.5fr;
+            grid-template-rows: 1fr;
+            gap: 30px;
+            .tablaTemporadas1{
+                font-size: 1rem;
+                width: 100%;
+                height: 100%;
+                /* Box Model */
+                border: 1px solid #4F5948;
+                /* Grid */
+                grid-column: 1/2;
+                grid-row: 1/2;
+                /* Flexbox */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .tablaTemporadas2{
+                @extend .tablaTemporadas1;
+                /* Grid */
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+            .tablaTemporadas3{
+                @extend .tablaTemporadas1;
+                /* Grid */
+                grid-column: 3/4;
+                grid-row: 1/2;
+            }
+            .tablaTemporadas4{
+                @extend .tablaTemporadas1;
+                /* Grid */
+                grid-column: 4/5;
+                grid-row: 1/2;
+            }
+        }
+    }
+}
+
+.sectionNuevosLanzamientos{
+    width: 100%;
+    height: 1180px;
+    .div-nuevos-lanzamientos{
+        width: 100%;
+        height: 238px;
+    
+        /* Flex */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            /* Box Model */
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+    }
+    .twd-dead-city{
+        
+        background-image: url(map-get($background-images, twd-dead-city));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 74.1875rem 27.6875rem;
+        text-align: center;
+        width: 90rem;
+        height: 27.6875rem;
+        /* Flexbox */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Box Model */
+        margin: 30px;
+    }
+    .twd-the-ones-who-live{
+        @extend .twd-dead-city;
+        background-image: url(map-get($background-images, twd-the-ones-who-live));
+    }
+}

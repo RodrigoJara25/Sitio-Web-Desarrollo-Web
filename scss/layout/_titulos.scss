@@ -1,0 +1,23 @@
+h1{
+    all: unset;   /*quito propiedades del h1 para que se vea mejor la fuente*/
+    display: block;
+    font-family: "DeadKansas";
+    color: $text-color;
+    font-size: 6.25rem;
+    width: 28.625rem;
+}
+
+h2{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-family: "Inika", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+h3{
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-family: "DeadKansas";
+    /* text-align: center; */
+}

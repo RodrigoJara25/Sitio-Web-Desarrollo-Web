@@ -1,0 +1,199 @@
+/* MediaQ de Index */
+@media (max-width: 426px) {
+    .bannerIndex{
+        width: 100%;
+        height: 147px;
+        background-image: url("../assets/images/dary-entre-caminantes-mobile.png");
+        background-size: cover;
+        .divBanner{
+            width: 50%;
+            margin-left: 30px;
+        }
+    }
+
+    .sectionAcercaDe {
+        width: 100%;
+        height: 159px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-content: center;
+        /* Posicionar items del layout */
+        justify-items: center;
+        align-items: center;
+        .divTitulo {
+            left: auto;
+            top: auto;
+            bottom: auto;
+            right: auto;
+            grid-column: 1/3;
+            grid-row: 1/3;
+            margin-left: 30px;
+            h2 {
+                left: auto;
+                bottom: auto;
+                right: auto;
+                font-size: 12px;
+                top: 45px;
+                left: 10px;
+            }
+            .divTituloEspecial{
+                left: auto;
+                bottom: auto;
+                right: auto;
+                top: 10px;
+                font-size: 20px;
+                padding-left: 20px;
+
+            }
+            p{
+                left: auto;
+                top: auto;
+                bottom: auto;
+                right: auto;
+                font-size: 10px;
+            }
+        }
+        .divImagen {
+            all: unset;
+            width: 100%;
+            height: 159px;
+            object-fit: contain;
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+    }
+
+    .sectionUltimosTrailers{
+        height: auto;
+        .divUltimosTrailers{
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            h2{
+                bottom: auto;
+                right: auto;
+                top: auto;
+                margin: 0;
+                font-size: 12px;
+                margin-left: 40px;
+            }
+            .divTituloEspecialPrincipal{
+                left: auto;
+                bottom: auto;
+                right: auto;
+                top: auto;
+                font-size: 20px;
+                padding-left: 50px;
+            }
+        }
+        .divVideosTrailers{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            article{
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+
+    .sectionExploraPersonajes{
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        .exploraPersonajes{
+            width: 100%;
+            height: 272px;
+            margin-top: 20px;
+            p{
+                font-size: 20px;
+                margin: 0 auto;
+            }
+            .personajeImg1{
+                width: 79px;
+                height: 75px;
+            }
+            .personajeImg2{
+                width: 79px;
+                height: 75px;
+                display: block;
+
+            }
+            .personajeImg3{
+                width: 79px;
+                height: 75px;
+
+            }
+        }
+        .miraMapa{
+            width: 100%;
+            height: 272px;
+            p{
+                font-size: 28px;
+            }
+            img{
+                width: 229px;
+                height: 186px;
+            }
+        }
+    }
+}
+
+/* MediaQ de Contacto */
+@media (max-width: 426px) {
+    .boxComentarios {
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .div-redes-sociales {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+
+        h2 {
+            margin-left: 100px; 
+            margin-top: 30px;
+            font-size: 1.5625rem;
+        }
+    }
+
+    .divTituloEspecialPrincipal {
+        font-family: "DeadKansas";
+        font-size: 1.75rem;
+        color: #927E7E;
+        opacity: 0.32;
+        position: absolute;
+        left: 60px;
+    }
+
+    .div-contenedor-redes-sociales {
+        margin-top: 10px;
+    }
+
+    .div-comentarios {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        h2 {
+            margin-left: 100px;
+            margin-top: 30px;
+            font-size: 1.5625rem;
+        }
+        .divTituloEspecialPrincipal{
+            font-size: 20px;
+        }
+        
+    }
+}

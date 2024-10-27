@@ -1,0 +1,55 @@
+@media (max-width: 375px){
+    .momentos-destacados{
+        width: 100%;
+        height: 514px;
+        background-image: url("../assets/images/section-personajes-twd.png");
+    }
+    
+    .div-momentos-destacados{
+        width: 100%;
+        height: 238px;
+    
+        /* Flex */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            /* Box Model */
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+    }
+    
+    .divVideosTrailers{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        article{
+            width: 25%;
+            p{
+                font-family: "Impact";
+                text-align: center;
+            
+                margin-top: 5px;
+            }
+        }
+    }
+    
+    iframe {
+        border: 2px solid #ebf1f0; 
+        border-radius: 10px; 
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .divTituloEspecialPrincipal{
+        font-family: "DeadKansas";
+        font-size: 1.875rem;
+        color: #927E7E;
+        opacity: 0.32;
+    
+        position: absolute;
+        left: 20px;
+    }
+}

@@ -1,0 +1,22 @@
+#carouselExample{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+.carouselPosition{
+    width: 100%;
+    position: absolute;
+}
+
+#mataTodo {
+    height: auto !important; /* Esto sobrescribirá cualquier estilo inline */
+}
+
+.parrafoCarousel{
+    font-size: .9375rem;
+}

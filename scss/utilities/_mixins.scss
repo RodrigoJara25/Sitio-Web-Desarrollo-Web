@@ -1,0 +1,11 @@
+/* Banners */
+@mixin estructura_banner($img){
+    width: 100%;
+    height: 41.25rem;
+    background-image: url($img);
+    background-size: cover;
+    
+    /* Flex Box */
+    display: flex;
+    align-items: center;
+}

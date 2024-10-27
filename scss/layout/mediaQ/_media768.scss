@@ -1,0 +1,133 @@
+/* MediaQ de Index */
+@media (max-width: 768px) {
+    .sectionAcercaDe {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Cambiamos el grid a 2 columnas */
+        grid-template-rows: repeat(3, 1fr);
+        margin: 0;
+        padding: 0;
+    }
+
+    .divTitulo{
+        grid-column: 1 / 3;
+        grid-row: 2/3;
+        justify-self: center; /* Centra horizontalmente dentro de su columna */
+        position: absolute;
+        p{
+            font-size: 20px;
+            position: relative;
+            bottom: 250px;
+        }
+        h2{
+            position: relative;
+            bottom: 120px;
+        }
+        .divTituloEspecial{
+            top: -250px;
+            font-size: 40px;
+        }
+    }
+
+    .divImagen {
+        width: 400px;
+        grid-column: 3 / 4; /* Ajustamos para ocupar una columna de las dos disponibles */
+        height: auto; /* Ajusta la altura automáticamente */
+        overflow: hidden; /* Oculta el contenido desbordado de la imagen */
+        object-fit: contain;
+    }
+
+
+    .divImagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Mantiene la proporción de la imagen sin salirse del contenedor */
+    }
+
+    .personajeImg2{
+        display: none;
+    }
+
+    .miraMapa{
+        width: 35%;
+        height: auto;
+        p{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 45%;
+            padding: 30px;
+        }
+    }
+}
+
+/* MediaQ de Contacto */
+@media (max-width: 768px) {
+    .contactoRedesSociales {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .div-redes-sociales {
+        width: 100%;
+        height: 14.875rem;
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+
+        h2 {
+            margin-left: 100px; 
+            margin-top: 30px;
+        }
+    }
+    .div-comentarios{
+        .divTituloEspecialPrincipal {
+            font-family: "DeadKansas";
+            font-size: 3rem;
+            color: #927E7E;
+            opacity: 0.32;
+            position: absolute;
+            left: 60px;
+        }
+    }
+
+    .div-redes-sociales-contacto {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            img {
+                width: 100%;
+                height: auto; 
+                object-fit: contain;
+            }
+
+            p {
+                color: black;
+                text-align: center;
+                font-size: 13px;
+                font-weight: bold;
+                margin-top: 1%;
+            }
+        }
+    }
+
+    .div-contenedor-redes-sociales {
+        width: 80%;
+        background-color: $text-color;
+        border: 1px solid $text-color;
+        border-radius: 20px;
+        padding: 3% 10% 5% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px; 
+    }
+}

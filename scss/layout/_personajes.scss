@@ -1,0 +1,74 @@
+.bannerPersonajes{
+    @include estructura_banner("../assets/images/personajes-banner.png");
+
+}
+
+.sectionPersonajesPrincipales{
+    /* Box Model */
+    margin: 3% 0%;
+    /* Flex Box */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px 10%;
+    div{
+        width: 302px;
+        height: 567px;
+        .fotoPerfil{
+            width: 18.875rem;
+            height: 24.9375rem;
+        }
+        .nombrePersonajes{
+            font-family: "DeadKansas";
+            font-size: 2.25rem;
+            text-align: center;
+            /* Box Model */
+            /* margin-top: 8px; */
+        }
+        .frasePersonajes{
+            font-family: "Inika", serif;
+            font-size: 1.25rem;
+            /* Box Model */
+            margin-top: 0px;
+        }
+    }
+}
+
+.momentos-destacados{
+    width: 100%;
+    height: 514px;
+    background-image: url("../assets/images/section-personajes-twd.png");
+    .div-momentos-destacados{
+        width: 100%;
+        height: 238px;
+    
+        /* Flex */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            /* Box Model */
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+    }
+    .divVideosTrailers{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        article{
+            width: 25%;
+            p{
+                font-family: "Impact";
+                text-align: center;
+            
+                margin-top: 10px;
+            }
+            iframe {
+                border: 2px solid $text-color; 
+                border-radius: 10px; 
+            }
+        }
+    }
+}
