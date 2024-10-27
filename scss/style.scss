@@ -456,18 +456,26 @@ p{
   
 @media (max-width: 425px) {
     .sectionAcercaDe {
-        height: auto;
-
+        all: unset;
+        width: 100%;
+        height: 400px;
+        display: block;
+        position: absolute;
         .divTitulo {
-            grid-column: 1 / -1;
+            all: unset;
+            z-index: -1;
+            text-align: center;
+            position: relative;
+            right: 20px;
             h2 {
                 font-size: 1.25rem;
             }
         }
 
         .divImagen {
-            grid-column: 1 / -1;
+            all: unset;
             width: 100%;
+            object-fit: contain;
         }
     }
 
