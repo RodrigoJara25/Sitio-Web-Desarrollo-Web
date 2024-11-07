@@ -30,23 +30,23 @@
                 text-align: center;
                 font-size: 1rem;
             }
-            .head1{
+        .head1{
                 color: $text-color;
                 grid-area: temporada;
                 justify-self: center;
             }
             
-            .head2{
+        .head2{
                 @extend .head1;
                 grid-area: episodios;
             }
             
-            .head3{
+        .head3{
                 @extend .head1;
                 grid-area: resumen;
             }
             
-            .head4{
+        .head4{
                 @extend .head1;
                 grid-area: fecha;
             }
@@ -80,6 +80,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: center
             }
             .tablaTemporadas2{
                 @extend .tablaTemporadas1;

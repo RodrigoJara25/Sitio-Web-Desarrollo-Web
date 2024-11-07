@@ -2,4 +2,23 @@
     .divTituloEspecial {
         font-size: 3.125rem;
     }
+
+    // Pagina TEMPORADAS
+    .sectionTemporadas {
+        width: 90%;
+        .divTemporadasHead{
+            width: 100%;
+            gap: 10px;
+        }
+        .divTemporadasContenido{
+            width: 100%;
+            .divTablaTemporadas{
+                gap: 10px;
+            }
+        }
+    }
+    .divTituloEspecialPrincipal{
+        font-size: 70px;
+        padding-top: 10px;
+    }
 }

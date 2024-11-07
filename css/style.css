@@ -414,6 +414,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .sectionTemporadas .divTemporadasContenido .divTablaTemporadas .tablaTemporadas2 {
   /* Grid */
@@ -454,7 +455,7 @@ p {
   background-repeat: no-repeat;
   background-size: 74.1875rem 27.6875rem;
   text-align: center;
-  width: 90rem;
+  width: 90%;
   height: 27.6875rem;
   /* Flexbox */
   display: flex;
@@ -822,6 +823,23 @@ p {
   .divTituloEspecial {
     font-size: 3.125rem;
   }
+  .sectionTemporadas {
+    width: 90%;
+  }
+  .sectionTemporadas .divTemporadasHead {
+    width: 100%;
+    gap: 10px;
+  }
+  .sectionTemporadas .divTemporadasContenido {
+    width: 100%;
+  }
+  .sectionTemporadas .divTemporadasContenido .divTablaTemporadas {
+    gap: 10px;
+  }
+  .divTituloEspecialPrincipal {
+    font-size: 70px;
+    padding-top: 10px;
+  }
 }
 @media (max-width: 960px) {
   .div-momentos-destacados h2 {
@@ -952,6 +970,40 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+}
+/* MediaQ de TEMPORADAS */
+@media (max-width: 768px) {
+  .bannerTemporadas {
+    width: 100%;
+    height: 343px;
+    background-size: contain;
+    object-fit: contain;
+  }
+  .bannerTemporadas .divBanner {
+    /* Box Model */
+    margin-left: 50px;
+  }
+  .bannerTemporadas .divBanner h1 {
+    font-size: 50px;
+  }
+  .tablaTemporadas4 {
+    text-align: center;
+  }
+  .sectionNuevosLanzamientos {
+    width: 100%;
+  }
+  .sectionNuevosLanzamientos .div-nuevos-lanzamientos h2 {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+  .sectionNuevosLanzamientos .div-nuevos-lanzamientos .divTituloEspecialPrincipal {
+    font-size: 50px;
+    margin-left: 30px;
+  }
+  .sectionNuevosLanzamientos .twd-dead-city, .sectionNuevosLanzamientos .twd-the-ones-who-live {
+    width: 100%;
+    margin: 20px 0;
   }
 }
 @media (max-width: 690px) {
@@ -1151,6 +1203,57 @@ p {
   }
   .div-comentarios .divTituloEspecialPrincipal {
     font-size: 20px;
+  }
+}
+/* MediaQ de TEMPORADAS */
+@media (max-width: 426px) {
+  .bannerTemporadas {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .bannerTemporadas .divBanner {
+    /* Box Model */
+    margin-left: 30px;
+  }
+  .bannerTemporadas .divBanner h1 {
+    font-size: 25px;
+  }
+  .sectionTemporadas .divTemporadasHead {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "temporada resumen";
+  }
+  .sectionTemporadas .divTemporadasHead .head1, .sectionTemporadas .divTemporadasHead div .head2, .sectionTemporadas .divTemporadasHead div .head3, .sectionTemporadas .divTemporadasHead div .head4 {
+    grid-area: temporada;
+  }
+  .sectionTemporadas .divTemporadasHead .head2 {
+    display: none !important;
+  }
+  .sectionTemporadas .divTemporadasHead .head3 {
+    grid-area: resumen;
+  }
+  .sectionTemporadas .divTemporadasHead .head4 {
+    display: none !important;
+  }
+  .tablaTemporadas4 {
+    text-align: center;
+  }
+  .sectionNuevosLanzamientos {
+    width: 100%;
+  }
+  .sectionNuevosLanzamientos .div-nuevos-lanzamientos h2 {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+  .sectionNuevosLanzamientos .div-nuevos-lanzamientos .divTituloEspecialPrincipal {
+    font-size: 50px;
+    margin-left: 30px;
+  }
+  .sectionNuevosLanzamientos .twd-dead-city, .sectionNuevosLanzamientos .twd-the-ones-who-live {
+    width: 100%;
+    margin: 20px 0;
   }
 }
 @media (max-width: 375px) {
