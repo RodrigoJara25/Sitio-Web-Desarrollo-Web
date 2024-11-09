@@ -1221,7 +1221,7 @@ p {
     font-size: 25px;
   }
   .sectionTemporadas .divTemporadasHead {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 100px 2fr;
     grid-template-rows: auto;
     grid-template-areas: "temporada resumen";
   }
@@ -1237,23 +1237,49 @@ p {
   .sectionTemporadas .divTemporadasHead .head4 {
     display: none !important;
   }
+  .sectionTemporadas .divTemporadasContenido .divTablaTemporadas {
+    /* Grid */
+    grid-template-columns: 100px 2fr;
+    grid-template-rows: auto;
+  }
+  .sectionTemporadas .divTemporadasContenido .divTablaTemporadas .tablaTemporadas2 {
+    display: none;
+  }
+  .sectionTemporadas .divTemporadasContenido .divTablaTemporadas .tablaTemporadas4 {
+    display: none;
+  }
   .tablaTemporadas4 {
     text-align: center;
   }
   .sectionNuevosLanzamientos {
     width: 100%;
+    height: auto;
+  }
+  .sectionNuevosLanzamientos .div-nuevos-lanzamientos {
+    height: auto;
   }
   .sectionNuevosLanzamientos .div-nuevos-lanzamientos h2 {
-    font-size: 40px;
+    font-size: 25px;
     margin-left: 40px;
   }
   .sectionNuevosLanzamientos .div-nuevos-lanzamientos .divTituloEspecialPrincipal {
-    font-size: 50px;
+    font-size: 30px;
     margin-left: 30px;
+    left: 0;
+    right: 0;
   }
   .sectionNuevosLanzamientos .twd-dead-city, .sectionNuevosLanzamientos .twd-the-ones-who-live {
     width: 100%;
     margin: 20px 0;
+    height: 200px;
+  }
+  .sectionNuevosLanzamientos .twd-dead-city .frame1, .sectionNuevosLanzamientos .twd-the-ones-who-live .frame1 {
+    width: 240px;
+    height: 150px;
+  }
+  .sectionNuevosLanzamientos .twd-the-ones-who-live .frame2 {
+    width: 240px;
+    height: 150px;
   }
 }
 @media (max-width: 375px) {

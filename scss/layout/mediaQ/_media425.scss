@@ -216,7 +216,7 @@
 
     .sectionTemporadas{
         .divTemporadasHead{
-            grid-template-columns: 1fr 2fr; 
+            grid-template-columns: 100px 2fr; 
             grid-template-rows: auto;
             grid-template-areas: "temporada resumen";
             .head1{
@@ -232,6 +232,25 @@
                 display: none !important;
             }
         }
+        .divTemporadasContenido{
+            .divTablaTemporadas{
+                /* Grid */
+                grid-template-columns: 100px 2fr; 
+                grid-template-rows: auto;
+                // .tablaTemporadas1{
+                    
+                // }
+                .tablaTemporadas2{
+                    display: none
+                }
+                // .tablaTemporadas3{
+                    
+                // }
+                .tablaTemporadas4{
+                    display: none;
+                }
+            }
+        }
     }
 
     .tablaTemporadas4{
@@ -240,19 +259,35 @@
 
     .sectionNuevosLanzamientos{
         width: 100%;
+        height: auto;
         .div-nuevos-lanzamientos{
+            height: auto;
             h2{
-                font-size: 40px;
+                font-size: 25px;
                 margin-left: 40px;
             }
             .divTituloEspecialPrincipal{
-                font-size: 50px;
+                font-size: 30px;
                 margin-left: 30px;
+                left: 0;
+                right: 0;
             }
         }
         .twd-dead-city{
             width: 100%;
             margin: 20px 0;
+            height: 200px;
+            .frame1{
+                width: 240px;
+                height: 150px;
+            }
+        }
+        .twd-the-ones-who-live{
+            @extend .twd-dead-city;
+            .frame2{
+                width: 240px;
+                height: 150px;
+            }
         }
     }
 }
