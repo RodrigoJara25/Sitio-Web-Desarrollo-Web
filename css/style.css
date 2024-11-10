@@ -1490,5 +1490,64 @@ p {
     left: 20px;
   }
 }
+/* MediaQ de MAPA */
+@media (max-width: 426px) {
+  .bannerMapa {
+    height: 149px;
+  }
+  .bannerMapa .divBanner h1 {
+    font-size: 20px;
+  }
+  .fondoHospital {
+    height: 421px;
+    background-size: cover;
+  }
+  .fondoHospital div {
+    position: static;
+    padding-left: 10%;
+    padding-top: 15%;
+  }
+  .fondoHospital div h2 {
+    font-size: 1.125rem;
+  }
+  .fondoHospital div p {
+    font-size: 0.5rem;
+    line-height: 20px;
+  }
+  .sectionMapa {
+    height: auto;
+  }
+  .sectionMapa .card-item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+  .sectionMapa .card-item .card-texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+    top: auto;
+    position: static;
+    padding: 0;
+  }
+  .sectionMapa .card-item .card-texto .titulosMapas {
+    font-size: 0.9375rem;
+    line-height: normal;
+    padding-left: 1.25rem;
+    width: 100%;
+  }
+  .sectionMapa .card-item .card-texto .pEspecial {
+    font-size: 0.8125rem;
+    line-height: 30px;
+    padding: 0;
+    line-height: 17px;
+  }
+  .sectionMapa .card-item .card-img .img2 {
+    display: none;
+    margin-bottom: 15px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
