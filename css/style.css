@@ -1030,6 +1030,52 @@ p {
     margin: 20px 0;
   }
 }
+/* MediaQ de MAPA */
+@media (max-width: 768px) {
+  .bannerMapa .divBanner h1 {
+    font-size: 60px;
+  }
+  .previewUbicaciones .previewGranja .h2Especial, .previewUbicaciones .previewPrision .h2Especial, .previewUbicaciones .previewAlexandria .h2Especial, .previewUbicaciones .previewSantuario .h2Especial {
+    font-size: 25px;
+  }
+  .previewUbicaciones .previewPrision .h2Especial {
+    font-size: 25px;
+  }
+  .previewUbicaciones .previewAlexandria .h2Especial {
+    font-size: 22px;
+  }
+  .previewUbicaciones .previewSantuario .h2Especial {
+    font-size: 25px;
+  }
+  .sectionMapa .card-item {
+    display: flex;
+    flex-direction: column;
+    height: 1041px;
+    width: 90%;
+  }
+  .sectionMapa .card-item .card-texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+    top: auto;
+    position: static;
+    padding: 0;
+  }
+  .sectionMapa .card-item .card-texto .titulosMapas {
+    font-size: 2.5rem;
+    line-height: 50px;
+    padding-left: 1.25rem;
+  }
+  .sectionMapa .card-item .card-texto .pEspecial {
+    font-size: 1.25rem;
+    line-height: 30px;
+    padding: 0;
+  }
+  .sectionMapa .card-item .card-img .img2 {
+    display: none;
+  }
+}
 @media (max-width: 690px) {
   .divBanner {
     /* Box Model */
