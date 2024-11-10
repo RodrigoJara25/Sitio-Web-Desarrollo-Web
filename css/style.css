@@ -841,6 +841,30 @@ p {
     padding-top: 10px;
   }
 }
+/*Media Query de MAPA*/
+@media (max-width: 1024px) {
+  .fondoHospital div {
+    bottom: 30%;
+  }
+  .fondoHospital div h2 {
+    font-size: 1.875rem;
+  }
+  .fondoHospital div p {
+    font-size: 1.25rem;
+  }
+  .previewUbicaciones .previewGranja .h2Especial, .previewUbicaciones .previewPrision .h2Especial, .previewUbicaciones .previewAlexandria .h2Especial, .previewUbicaciones .previewSantuario .h2Especial {
+    font-size: 30px;
+  }
+  .previewUbicaciones .previewPrision .h2Especial {
+    font-size: 30px;
+  }
+  .previewUbicaciones .previewAlexandria .h2Especial {
+    font-size: 30px;
+  }
+  .previewUbicaciones .previewSantuario .h2Especial {
+    font-size: 30px;
+  }
+}
 @media (max-width: 960px) {
   .div-momentos-destacados h2 {
     /* Box Model */

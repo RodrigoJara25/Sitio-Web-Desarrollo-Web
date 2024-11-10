@@ -22,3 +22,40 @@
         padding-top: 10px;
     }
 }
+
+/*Media Query de MAPA*/
+@media(max-width: 1024px){
+    .fondoHospital{
+        div{
+            bottom: 30%;
+            h2{
+                font-size: 1.875rem;
+            }   
+            p{
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .previewUbicaciones{
+        .previewGranja{
+            .h2Especial{
+                font-size: 30px;
+            }
+        }
+        .previewPrision{
+            .h2Especial{
+                font-size: 30px;
+            }
+        }
+        .previewAlexandria{
+            .h2Especial{
+                font-size: 30px;
+            }
+        }
+        .previewSantuario{
+            .h2Especial{
+                font-size: 30px;
+            }
+        }
+    }
+}
